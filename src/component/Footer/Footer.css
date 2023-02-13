@@ -1,0 +1,20 @@
+.footer{
+    background-color: #0A4D3C;
+    padding: 50px;
+}
+
+.footer h2{
+    font-family: "Playfair Display", serif;
+    color: #FFA300;
+}
+.footer p{
+    color: white;
+}
+.footer p:hover{
+    color: #FFA300;
+}
+
+.footer-btn{
+    background-color:#FFA300;
+    color: white;
+}

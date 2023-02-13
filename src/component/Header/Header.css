@@ -1,0 +1,21 @@
+.link{
+    margin:0 25px 0 0;
+    color: black;
+    font-size: 18px;
+}
+.link:hover{
+    color: #FFA300 ;
+}
+
+.nav .btn-color{
+    background-color: #0A4D3C;
+    color: white;
+}
+.nav .btn-color:hover{
+    background-color: #FFA300;
+    color: white;
+}
+
+.nav .dropdown-item:hover{
+    color: #FFA300 !important;
+}
