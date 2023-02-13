@@ -1,0 +1,36 @@
+.allCourses{
+
+}
+
+.allCourses .allCourses-icon{
+    font-size: 150px;
+    border: 2px solid #FFA300;
+    border-radius: 50%;
+    padding: 30px;
+    background-color: #F8F6F4;
+    color: #0A4D3C;
+    margin: 50px 0px 20px 0;
+}
+
+.allCourses .arrowRight{
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin: 20px 0;
+    font-weight: 100;
+}
+
+.col-12:hover .arrowRight{
+    background-color: #FFA300;
+}
+.col-12:hover .allCourses-icon{
+    background-color: #FFA300;
+}
+.col-12 h2{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+}
+.col-12:hover h2{
+    color: #FFA300;
+}

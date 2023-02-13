@@ -1,16 +1,13 @@
 import React from "react";
 import { NavLink } from "react-bootstrap";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logo from '../../img/logo.webp'
 import './Header.css'
 
 const Header = () => {
   return (
-    <div>
-      <Navbar className="" bg="light" expand="lg">
+    <>
+      <Navbar sticky='top' collapseOnSelect expand="lg" bg="light">
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="" />
@@ -39,7 +36,7 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+    </>
   );
 };
 

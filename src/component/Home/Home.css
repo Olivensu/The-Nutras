@@ -1,0 +1,59 @@
+.home{
+    height: 100vh;
+    background-image: url(../../img/background/oatmeal-dryfruits-with-bird-paradise-flower-white-background-min.jpg);
+    background-repeat: no-repeat;
+    padding: 7% 8%;
+    background-size: cover;
+}
+.home .text{
+    color: #0A4D3C;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+}
+.home h1{
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.home button{
+    background-color: #FFA300 ;
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 35px;
+
+}
+.home button:hover{
+    background-color: #0A4D3C;
+}
+
+ .connect{
+    color: #362E26;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.connect span{
+    padding: 2px 8px 7px 8px;
+    border: .5px solid wheat;
+    border-radius: 50%;
+    margin: 10px;
+}
+.connect span:hover{
+    background-color: #0A4D3C;
+    color: white;
+    padding: 2px 8px 7px 8px;
+    border: .5px solid wheat;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .home h1{
+        font-size: 40px;
+    }
+  }

@@ -1,11 +1,12 @@
 .footer{
     background-color: #0A4D3C;
-    padding: 50px;
+    padding: 50px  50px 0px 50px;
 }
 
 .footer h2{
     font-family: "Playfair Display", serif;
     color: #FFA300;
+    margin-bottom: 30px;
 }
 .footer p{
     color: white;
@@ -17,4 +18,18 @@
 .footer-btn{
     background-color:#FFA300;
     color: white;
+    margin-bottom: 50px;
+}
+
+.footer-span{
+    color: white;
+    margin-left: 30px;
+}
+.footer-span:hover{
+    color: #FFA300
+}
+
+.copyright{
+    background-color: #094435;
+    padding: 30px 0 20px 0;
 }
