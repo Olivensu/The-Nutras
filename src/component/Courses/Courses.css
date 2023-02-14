@@ -1,0 +1,22 @@
+.courses{
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.courses p{
+    color: #094435;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.courses h1{
+    font-size: 60px;
+    font-family: "Playfair Display", serif;
+}
+
+@media only screen and (max-width: 768px){
+    .courses h1{
+        font-size: 40px;
+        font-family: "Playfair Display", serif;
+    }
+}

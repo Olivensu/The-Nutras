@@ -21,16 +21,16 @@
     font-weight: 100;
 }
 
-.col-12:hover .arrowRight{
+.grid:hover .arrowRight{
     background-color: #FFA300;
 }
-.col-12:hover .allCourses-icon{
+.grid:hover .allCourses-icon{
     background-color: #FFA300;
 }
-.col-12 h2{
+.grid h2{
     font-family: "Playfair Display", serif;
     font-weight: 600;
 }
-.col-12:hover h2{
+.grid:hover h2{
     color: #FFA300;
 }

@@ -1,0 +1,28 @@
+.course{
+    padding: 50px;
+}
+
+.course h4{
+    background-color: #094435;
+    display: inline;
+    padding: 22px 18px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+}
+
+.course p{
+    margin-top: 50px;
+    color: gray;
+}
+.course h2{
+    font-family: "Playfair Display", serif;
+}
+.course p span{
+    margin-top: 50px;
+    color: black;
+}
+
+.course small{
+    color: #FFA300;
+}
