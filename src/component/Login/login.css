@@ -1,0 +1,58 @@
+.top-banner{
+    background-image: url(../../img/background/oatmeal-dryfruits-with-bird-paradise-flower-white-background-min.jpg);
+    background-size:cover;
+    background-position:100%;
+    height: 50vh;
+    padding-top: 15vh;
+    padding-left: 110px;
+}
+
+.top-banner h1{
+    font-size: 60px;
+    font-family: "Playfair Display", serif;
+}
+
+.top-banner span{
+    color: #FFA300;
+}
+
+.top-banner p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.signUp{
+    background-color: #F8F6F4;
+    margin: 110px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.signUp input{
+    width: 350px;
+    height: 50px;
+    padding: 10px 20px;
+    display: block;
+    margin: 30px auto;
+}
+
+.signUp span{
+    color: #FFA300;
+}
+
+.signUp button{
+    background-color: #FFA300;
+    display: block;
+    margin: 30px auto;
+}
+
+@media only screen and (max-width: 768px){
+    .top-banner{
+        padding-left: 30px;
+    }
+    .signUp{
+        margin: 30px;
+    }
+    .signUp input{
+        width: 300px;
+    }
+}
