@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Course from '../Course/Course';
 import CoursesHook from '../Hooks/CoursesHook';
 import './Courses.css'
 
 const Courses = () => {
-    const [courses, setCourses]  = CoursesHook()
+    const [courses, setCourses]  = CoursesHook();
+    console.log('olive',courses);
     return (
         <div className='courses'>
             <p>100+ COURSES AVAILABLE</p>
@@ -17,7 +19,7 @@ const Courses = () => {
                     ></Course>).slice(0,6)
                 }
             </div>
-            <button className='btn rounded-pill px-5 py-3 bg-success fs-5 text-white my-5'>See All The Courses</button>
+            <Link to='/totalCourses'><button className='btn rounded-pill px-5 py-3 bg-success fs-5 text-white my-5'>See All The Courses</button></Link>
         </div>
     );
 };

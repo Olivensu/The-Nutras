@@ -6,11 +6,14 @@ import Home from './component/Home/Home';
 import AllCourses from './component/AllCourses/AllCourses';
 import HomeInstructor from './component/Home/Home-Instructor/HomeInstructor';
 import Courses from './component/Courses/Courses';
+import TotalCourses from './component/Courses/TotalCourses';
 import { Routes } from 'react-router-dom';
 import { Route } from 'react-router';
 import SignIn from './component/Login/SignIn';
 import SignUp from './component/Login/SignUp';
 import MobileApp from './component/MobileApp/MobileApp';
+import CourseDetails from './component/CourseDetails/CourseDetails';
+import NotFound from './component/NotFound/NotFound';
 
 function App() {
   return (
@@ -25,8 +28,11 @@ function App() {
           <Courses></Courses>
           <MobileApp></MobileApp>
         </>}></Route>
+        <Route path='/totalCourses' element={<TotalCourses></TotalCourses>}></Route>
+        <Route path='/Course-Details/:serviceId' element={<CourseDetails></CourseDetails>}></Route>
         <Route path='/signin' element={<SignIn></SignIn>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

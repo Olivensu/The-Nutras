@@ -5,7 +5,7 @@ import './MobileApp.css'
 
 const MobileApp = () => {
   return (
-    <div className="MobileApp m-5">
+    <div className="MobileApp m-md-5">
       <p>MOBILE APP AVAILABLE</p>
       <h1>Download our mobile app. and start coaching anytime.</h1>
       <div>

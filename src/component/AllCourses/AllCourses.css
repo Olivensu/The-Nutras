@@ -34,3 +34,7 @@
 .grid:hover h2{
     color: #FFA300;
 }
+
+@media  only screen and (max-width: 768px) {
+    
+}

@@ -18,11 +18,26 @@
 .course h2{
     font-family: "Playfair Display", serif;
 }
+.course img:hover{
+    cursor: pointer;
+}
 .course p span{
     margin-top: 50px;
     color: black;
 }
+.course h2:hover{
+    color: #FFA300 ;
+    cursor: pointer;
+}
 
 .course small{
     color: #FFA300;
+}
+
+
+@media only screen and (max-width: 768px){
+    .course{
+        padding: 10px;
+    }
+    
 }

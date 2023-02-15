@@ -6,10 +6,6 @@ import {
   FaSkype,
   FaTwitter,
   FaLinkedin,
-  FaHeartbeat,
-  FaArrowRight,
-  FaMale,
-  FaFemale,
 } from "react-icons/fa";
 
 const Home = () => {

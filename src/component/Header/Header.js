@@ -11,7 +11,7 @@ const Header = () => {
       <Navbar sticky='top' collapseOnSelect expand="lg" bg="light">
         <Container>
           <Navbar.Brand href="#home">
-            <img src={logo} alt="" />
+            <Link to='/'><img src={logo} alt="" /></Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="" id="basic-navbar-nav">
@@ -19,10 +19,8 @@ const Header = () => {
               <NavLink><Link className="link text-decoration-none" to="/">Home</Link></NavLink>
               <NavLink className="link"  to="#link">About Us</NavLink>
               <NavDropdown  className="link" title="All Courses" id="navbarScrollingDropdown">
-              <NavDropdown.Item className="dropdown-item" href="#action3">Courses</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-              All Courses
-              </NavDropdown.Item>
+              <NavDropdown.Item className="dropdown-item"><Link className="text-decoration-none text-dark" to='/totalCourses'>Courses</Link> </NavDropdown.Item>
+              <NavDropdown.Item className="dropdown-item"><Link className="text-decoration-none text-dark" to='/Course-Details/1'>Course Details</Link> </NavDropdown.Item>
             </NavDropdown>
               <NavDropdown  className="link" title="Pages" id="navbarScrollingDropdown">
               <NavDropdown.Item className="dropdown-item" href="#action3">Students</NavDropdown.Item>

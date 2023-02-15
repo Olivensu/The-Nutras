@@ -55,4 +55,7 @@
     .signUp input{
         width: 300px;
     }
+    .top-banner h1{
+        font-size: 45px;
+    }
 }
