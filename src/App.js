@@ -7,13 +7,14 @@ import AllCourses from './component/AllCourses/AllCourses';
 import HomeInstructor from './component/Home/Home-Instructor/HomeInstructor';
 import Courses from './component/Courses/Courses';
 import TotalCourses from './component/Courses/TotalCourses';
-import { Routes } from 'react-router-dom';
-import { Route } from 'react-router';
+import { Route, Routes } from 'react-router-dom';
 import SignIn from './component/Login/SignIn';
 import SignUp from './component/Login/SignUp';
 import MobileApp from './component/MobileApp/MobileApp';
 import CourseDetails from './component/CourseDetails/CourseDetails';
 import NotFound from './component/NotFound/NotFound';
+import CheckOut from './component/CheckOut/CheckOut';
+import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path='/signin' element={<SignIn></SignIn>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
+        <Route path='/checkout' element={<PrivateRoute><CheckOut></CheckOut></PrivateRoute>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

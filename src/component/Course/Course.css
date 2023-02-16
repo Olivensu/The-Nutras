@@ -17,6 +17,7 @@
 }
 .course h2{
     font-family: "Playfair Display", serif;
+    transition: 0.4s ease;
 }
 .course img:hover{
     cursor: pointer;

@@ -1,0 +1,15 @@
+.checkout{
+    margin: 100px;
+    margin-top: 0;
+}
+
+.checkout-item-info{
+    border: 2px solid green;
+    padding: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .checkout{
+        margin: 20px;
+    }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import CoursesHook from "../Hooks/CoursesHook";
 import data from "../../course.json";
@@ -189,9 +189,9 @@ The course will cover a range of topics, including:
             <p className="text-muted">Yes</p>
           </div>
           <hr className="w-75 m-auto" />
-          <button className="enroll btn rounded-pill px-5 py-3 text-white fs-5 m-5">
+          <Link to='/checkout'><button className="enroll btn rounded-pill px-5 py-3 text-white fs-5 m-5">
             Enroll Now
-          </button>
+          </button></Link>
 
           <h3 className="mb-5">Share Course</h3>
           <div className="icon-social">

@@ -4,8 +4,15 @@ import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import logo from '../../img/logo.webp'
 import './Header.css';
 import { Link } from "react-router-dom";
+import { signOut } from 'firebase/auth';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from "../../firebase.init";
 
 const Header = () => {
+  const [user, loading, error] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+  };
   return (
     <>
       <Navbar sticky='top' collapseOnSelect expand="lg" bg="light">
@@ -27,10 +34,20 @@ const Header = () => {
               <NavDropdown.Item href="#action4">
                 Review
               </NavDropdown.Item>
+              <NavDropdown.Item className="dropdown-item"><Link className="text-decoration-none text-dark" to='/notfound'>Page 404</Link> </NavDropdown.Item>
             </NavDropdown>
               <NavLink className="link"  href="#home">Blog</NavLink>
               <NavLink className="link"  href="#home">Contact</NavLink>
-              <Link className="text-decoration-none btn btn-color link rounded-pill px-4" to='/signup'>Sign Up </Link>
+              {
+                user ?
+                <>
+                <NavLink className="link text-white bg-warning"  href="#home">{user?.displayName.slice(0,8)}</NavLink>
+                <NavLink className="link m-0 p-0"  href="#home"><img className="photoURL me-3 mb-2" src={user?.photoURL} alt="" /></NavLink>
+                
+                <Link onClick={logout} className="text-decoration-none btn btn-color link rounded-pill px-4">Sign Out </Link></>
+                :
+                <Link className="text-decoration-none btn btn-color link rounded-pill px-4" to='/signup'>Sign Up </Link>
+              }
           
             </Nav>
           </Navbar.Collapse>
