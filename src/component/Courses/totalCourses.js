@@ -6,6 +6,7 @@ import "./Courses.css";
 import {
     FaSearch
   } from "react-icons/fa";
+import MobileApp from "../MobileApp/MobileApp";
 
 const TotalCourses = () => {
   const [courses, setCourses] = CoursesHook();
@@ -17,13 +18,12 @@ const TotalCourses = () => {
           Home // <span>All Courses</span>
         </p>
       </div>
-      <div className="row justify-content-center">
+      <div className="row m-1 justify-content-center">
         <select className="select col-md-3 col-4 rounded">
           <option value="1">Education</option>
           <option value="1">Design</option>
           <option value="1">Education</option>
           <option value="1">Design</option>
-         
         </select>
         <div className="col-md-5 col-8">
         <input className="select w-50 rounded" type="text" placeholder="Search here " name="" id="" />
@@ -37,6 +37,7 @@ const TotalCourses = () => {
           ))}
         </div>
       </div>
+      <MobileApp></MobileApp>
     </div>
   );
 };

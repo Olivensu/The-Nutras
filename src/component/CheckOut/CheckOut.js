@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import MobileApp from "../MobileApp/MobileApp";
 import "./CheckOut.css";
 
 const CheckOut = () => {
@@ -87,14 +89,17 @@ const CheckOut = () => {
                 </div>
                 <hr />
                 <h4>Payment</h4>
-                <div className="mt-5 ">
-                    <button className="py-2 text-white bg-success border-0 rounded-pill m-2 fs-5 px-3">Credit Card</button>
-                    <button className="py-2 text-white bg-success border-0 rounded-pill m-2 fs-5 px-3">Bank Transfer</button>
-                    <button className="py-2 text-white bg-success border-0 rounded-pill m-2 fs-5 px-3">Paypal</button>
+                <div className="mt-5 bank">
+                    <button className="py-2 text-white  border-0 rounded-pill m-2 fs-5 px-3">Credit Card</button>
+                    <button className="py-2 text-white  border-0 rounded-pill m-2 fs-5 px-3">Bank Transfer</button>
+                    <button className="py-2 text-white  border-0 rounded-pill m-2 fs-5 px-3">Paypal</button>
                 </div>
+                <button  className="py-2 text-white w-100 bg-success border-0 rounded-pill mt-3 fs-5 px-3">CheckOut</button>
+                <p className="pt-4"><Link className="text-decoration-none text-dark">Back to Cart</Link></p>
             </div>
         </div>
       </div>
+      <MobileApp></MobileApp>
     </div>
   );
 };

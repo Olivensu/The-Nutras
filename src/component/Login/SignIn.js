@@ -9,6 +9,8 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { Spinner } from "react-bootstrap";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -17,13 +19,20 @@ const SignIn = () => {
     useSignInWithEmailAndPassword(auth);
   const [signInWithGoogle, userGoogle, loadingGoogle, errorGoogle] =
     useSignInWithGoogle(auth);
-  if (user) {
-    return (
-      <div>
-        <p>Signed In User: {user?.user.email}</p>
-      </div>
-    );
-  }
+    const loginButton =()=>{
+      signInWithEmailAndPassword(email, password)
+      toast("Congratulations Signed In!!!")
+      
+    }
+    const loginWithGoogleButton =()=>{
+      signInWithGoogle();
+      toast("Congratulations Signed In!!")
+    }
+    if(error || errorGoogle){
+      toast("Failed in Signed In!!")
+    }
+    
+     
 
   return (
     <div className="">
@@ -66,14 +75,15 @@ const SignIn = () => {
           id=""
         />
         <button
-          onClick={() => signInWithEmailAndPassword(email, password)}
-          className="btn rounded-pill py-2 fs-5 fw-semi-bold px-5"
+          onClick={loginButton}
+          className="btn rounded-pill py-2 fs-5 fw-semi-bold  text-white px-5"
         >
           Login
         </button>
-        <button onClick={() => signInWithGoogle()} className="btn rounded-pill py-2 fs-5 fw-semi-bold px-5 bg-success">
+        <button onClick={() => loginWithGoogleButton()} className="btn rounded-pill text-white py-2 fs-5 fw-semi-bold px-5 ">
           Login With Google
         </button>
+        <ToastContainer />
         <p className="text-danger">{error?.message || errorGoogle?.message}</p>
         <Link className="text-decoration-none fs-6 text-muted" to="/forgetPass">
           <p>Forget Password?</p>

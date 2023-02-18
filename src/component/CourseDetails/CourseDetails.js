@@ -20,6 +20,7 @@ import {
   FaTwitter,
   FaLinkedin,
 } from "react-icons/fa";
+import MobileApp from "../MobileApp/MobileApp";
 
 const CourseDetails = () => {
   const [show, setShow] = useState("video-container");
@@ -94,14 +95,14 @@ const CourseDetails = () => {
               </p>
             </div>
           </div>
-          <div className="buttons d-flex justify-content-between  align-items-center">
-            <button className="enroll btn rounded-pill px-4 py-2 text-white fs-5 ">
+          <div className="buttons text-center">
+            <button className="enroll btn rounded-pill mx-4 my-2 px-4 py-2 text-white fs-5 ">
               Description
             </button>
-            <button className="enroll btn rounded-pill px-4 py-2 text-white fs-5 ">
+            <button className="enroll btn rounded-pill mx-4 my-2 px-4 py-2 text-white fs-5 ">
               Instructors
             </button>
-            <button className="enroll btn rounded-pill px-4 py-2 text-white fs-5 ">
+            <button className="enroll btn rounded-pill mx-4 my-2 px-4 py-2 text-white fs-5 ">
               Reviews
             </button>
           </div>
@@ -210,6 +211,7 @@ The course will cover a range of topics, including:
           </div>
         </div>
       </div>
+      <MobileApp></MobileApp>
     </div>
   );
 };

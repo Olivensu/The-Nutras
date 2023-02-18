@@ -14,7 +14,7 @@ const NotFound = () => {
       </div>
       <img className="img-fluid" src={error} alt="" />
       <h1 className="text-danger mt-5">Sorry,</h1>
-      <h2>Something missiong....</h2>
+      <h2>Something missing....</h2>
       <p className="text-muted">Standard dummy text ever since the and when an unknown printe specimen book has survived centuries.</p>
       <Link to='/'><button className="rounded-pill px-5 py-3 bg-warning border-0 mb-5 fs-5">Back To Home</button></Link>
       <MobileApp></MobileApp>

@@ -1,0 +1,40 @@
+.blogs-container{
+   
+}
+.blogs:hover, .blogs:hover small {
+    background-color: #FFA300;
+    color: white;
+}
+
+.blog-date{
+    background-color: #094435;
+}
+
+
+.blogs{
+    background-color: #F8F6F4;
+    padding: 30px;
+    margin: 20px;
+}
+
+.blogs h3{
+    font-family: "Playfair Display", serif;
+}
+.blogs-container h1{
+    font-family: "Playfair Display", serif;
+    font-size: 65px;
+}
+
+@media screen and (max-width: 768px) {
+    .blogs-container{
+        margin: 40px;
+    }
+
+    .blogs{
+        margin: 0px;
+    }
+    .blogs-container h1{
+        font-family: "Playfair Display", serif;
+        font-size: 45px;
+    }
+}

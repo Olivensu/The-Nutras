@@ -1,11 +1,10 @@
 import React from "react";
 import "./Home-Instructor.css";
-import instructor from "../../../img/instructor/instructor.png";
 
 const HomeInstructor = () => {
   return (
     <div>
-      <div className="row HomeInstructor">
+      <div className="row m-2 HomeInstructor">
         <div className="instructor-left col-12 col-md-5">
           <div className="meet-instructor">
             <button className="btn rounded-pill px-5 py-3">

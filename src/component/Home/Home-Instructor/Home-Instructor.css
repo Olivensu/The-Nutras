@@ -6,6 +6,7 @@
 .instructor-left{
     background-image: url(../../../img/instructor/instructor-long.png); 
     background-size:cover;
+    
     background-repeat: no-repeat;
     position: relative;
 }
@@ -51,7 +52,7 @@
         height: 100vh;
     }
     .HomeInstructor{
-        padding: 35px;
+        padding: 10px;
     }
   }
 

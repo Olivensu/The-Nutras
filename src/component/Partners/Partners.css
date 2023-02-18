@@ -1,0 +1,13 @@
+.partners{
+    background-color: #F8F6F4;
+    margin: 100px;
+    padding: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .partners{
+        background-color: #F8F6F4;
+        margin: 0px;
+        padding: 40px;
+    }
+}

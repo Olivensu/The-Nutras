@@ -6,7 +6,7 @@ import {
 
 const AllCourses = () => {
     return (
-        <div className='allCourses row p-5'>
+        <div className='allCourses row m-3 m-md-5'>
             <div className='grid col-12 col-md-4 p-md-5'>
                 <FaFemale className='allCourses-icon'/>
                 <h2>Women's Course</h2>

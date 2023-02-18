@@ -43,6 +43,12 @@
     background-color: #FFA300;
     display: block;
     margin: 30px auto;
+    transition: 0.5s ease;
+}
+.signUp button:hover{
+    background-color: #094435;
+    display: block;
+    margin: 30px auto;
 }
 
 @media only screen and (max-width: 768px){

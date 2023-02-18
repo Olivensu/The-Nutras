@@ -7,6 +7,13 @@
     border: 2px solid green;
     padding: 30px;
 }
+.bank button{
+    transition: 0.5s ease;
+    background-color: #FFA300 ;
+}
+.bank button:hover{
+    background-color: black;
+}
 
 @media screen and (max-width: 768px){
     .checkout{

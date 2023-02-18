@@ -61,6 +61,8 @@
 .details-course-info {
     background-color: #F8F6F4;
     padding: 20px;
+    border-left: 3px solid green;
+    border-bottom: 3px solid green ;
     
 }
 .buttons{

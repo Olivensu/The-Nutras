@@ -23,30 +23,30 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="" id="basic-navbar-nav">
             <Nav className="nav mx-auto">
-              <NavLink><Link className="link text-decoration-none" to="/">Home</Link></NavLink>
-              <NavLink className="link"  to="#link">About Us</NavLink>
+              <NavLink className="link" href="/">Home</NavLink>
+              <NavLink className="link"  href="/about">About Us</NavLink>
               <NavDropdown  className="link" title="All Courses" id="navbarScrollingDropdown">
-              <NavDropdown.Item className="dropdown-item"><Link className="text-decoration-none text-dark" to='/totalCourses'>Courses</Link> </NavDropdown.Item>
-              <NavDropdown.Item className="dropdown-item"><Link className="text-decoration-none text-dark" to='/Course-Details/1'>Course Details</Link> </NavDropdown.Item>
+              <NavDropdown.Item href='/totalCourses' className="dropdown-item"><Link className="text-decoration-none text-dark" >Courses</Link> </NavDropdown.Item>
+              <NavDropdown.Item href='/Course-Details/1' className="dropdown-item"><Link className="text-decoration-none text-dark" >Course Details</Link> </NavDropdown.Item>
             </NavDropdown>
               <NavDropdown  className="link" title="Pages" id="navbarScrollingDropdown">
               <NavDropdown.Item className="dropdown-item" href="#action3">Students</NavDropdown.Item>
+              <NavDropdown.Item className="dropdown-item"  href="/blogs">Blogs</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Review
               </NavDropdown.Item>
-              <NavDropdown.Item className="dropdown-item"><Link className="text-decoration-none text-dark" to='/notfound'>Page 404</Link> </NavDropdown.Item>
+              <NavDropdown.Item href='/notfound' className="dropdown-item text-decoration-none text-dark">Page 404 </NavDropdown.Item>
             </NavDropdown>
-              <NavLink className="link"  href="#home">Blog</NavLink>
-              <NavLink className="link"  href="#home">Contact</NavLink>
+              <NavLink className="link"  href="/blogs">Blog</NavLink>
               {
                 user ?
                 <>
-                <NavLink className="link text-white bg-warning"  href="#home">{user?.displayName.slice(0,8)}</NavLink>
+                <NavLink className="link text-white bg-warning"  href="#home">{user?.displayName?.slice(0,8)}</NavLink>
                 <NavLink className="link m-0 p-0"  href="#home"><img className="photoURL me-3 mb-2" src={user?.photoURL} alt="" /></NavLink>
-                
-                <Link onClick={logout} className="text-decoration-none btn btn-color link rounded-pill px-4">Sign Out </Link></>
+                <NavLink onClick={logout} className="text-decoration-none btn btn-color bg-danger link rounded-pill px-4">Sign Out </NavLink></>
                 :
-                <Link className="text-decoration-none btn btn-color link rounded-pill px-4" to='/signup'>Sign Up </Link>
+                <NavLink href='/signup' className="text-decoration-none btn btn-color link rounded-pill px-4" >Sign Up </NavLink>
+                
               }
           
             </Nav>
