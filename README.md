@@ -1,4 +1,4 @@
-# THe Nutras
+# The Nutras
 
 This site make to build a perfect life style for your fitness, not only diet.
 
